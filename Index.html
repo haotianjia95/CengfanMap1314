@@ -4,22 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>基本点聚合功能</title>
+  <title>蹭饭地图_test_v1</title>
   <style>
     html,
     body {
       margin: 0;
       padding: 0;
       overflow: hidden;
-      height: 100%;
+      width: 100%;
     }
     #mapContainer {
       position: relative;
       height: 100%;
       width: 100%;
     }
+    iframe {
+    display: block;       /* iframes are inline by default */
+    background: #000;
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 100vw;
+}
   </style>
 </head>
+<p align="center">
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1jvooBFhl68dezQ0dDUGUXUFf4DXfGDc&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+</p>
 </body>
 </html>
