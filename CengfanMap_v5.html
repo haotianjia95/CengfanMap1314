@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <style type="text/css">
+  body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+  </style>
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=neXcKfhMKl6ReaqWt822Wl5ijcD6zWgX"></script>
+  <title>1314蹭饭地图_v4</title>
+</head>
+<body>
+  <div id="allmap"></div>
+</body>
+</html>
+<script type="text/javascript">
+
+
+var markerArr = [ 
+  { title: "北京", lng: "116.4178", lat: "39.9219", names: "高媛媛 蔚柯宇 王泽宁 王雪峰 薛娜 闫璟 韩雅各 贺蕴波 侯宇佳 王皓正 王旨 付博 栗森阳" },
+  { title: "上海", lng: "121.4737", lat: "31.2304", names: "刘世杰 任冠儒 吴嘉兴 李明哲 何学方 高展 于鑫海 王浩燃 董晨玉 高展" },
+  { title: "西安", lng: "108.9541", lat: "34.2658", names: "李震 师嘉辰 刘鑫" },
+  { title: "包头", lng: "109.8402", lat: "40.6578", names: "潘多维 谷玉洁 张子涵 包晗" },
+  { title: "成都", lng: "104.0668", lat: "30.5728", names: "董家昕 刘雅萍" },
+  { title: "深圳", lng: "114.0579", lat: "22.5431", names: "白祥云 董嘉宁 刘栋 庄梓译 贺子效" },
+  { title: "呼和浩特", lng: "111.6604", lat: "40.8283", names: "高鹏" },
+  { title: "集宁", lng: "113.1094", lat: "41.0229", names: "倪思敏" },
+  { title: "鄂尔多斯", lng: "109.9937", lat: "39.8165", names: "王垣智" },
+  { title: "哈尔滨", lng: "126.5349", lat: "45.8038", names: "杨静" },
+  { title: "苏州", lng: "120.5853", lat: "31.2990", names: "韩承昊 郑豪 周震东" },
+  { title: "乌海", lng: "106.8256", lat: "39.6737", names: "胡之媛" },
+  { title: "济南", lng: "117.1205", lat: "36.6512", names: "杨晓庆" },
+  { title: "武汉", lng: "114.3054", lat: "30.5928", names: "刘鹏" },
+  { title: "南京", lng: "118.7969", lat: "32.0603", names: "王小兵" },
+  { title: "大连", lng: "121.6147", lat: "38.9140", names: "李浩楠" },
+  { title: "西班牙", lng: "-3.7492", lat: "40.4637", names: "王芸薇" },
+  { title: "荷兰", lng: "5.2913", lat: "52.1326", names: "王硕" },
+  { title: "东京", lng: "139.6917", lat: "35.6895", names: "魏顺宇" },
+  { title: "波士顿", lng: "-71.0589", lat: "42.3601", names: "贾昊天" },
+  { title: "新奥尔良", lng: "-90.0715", lat: "29.9511", names: "王晋文" }
+
+];
+
+// 百度地图API功能 
+var map = new BMap.Map("allmap");
+var center = new BMap.Point(117.1205,36.6512);
+map.centerAndZoom(center,5);// 初始化地图,设置中心点坐标和地图级别
+
+map.enableScrollWheelZoom(true);
+
+map.setMapStyle({style:'grayscale'})
+;
+// var myStyleJson=[  
+// {  
+//     "featureType": "road",  
+//     "elementType": "geometry.stroke",  
+//     "stylers": {  
+//         "color": "#ff0000"  
+//         "visibility" : "off"
+//     }  
+// }];
+// map.setMapStyle({styleJson: myStyleJson }); 
+
+var point  = new Array();
+var marker = new Array();
+var info   = new Array();
+
+for (var i = 0; i < markerArr.length; i++){
+  var longitude = markerArr[i].lng;
+  var latitude  = markerArr[i].lat;
+  point[i] = new BMap.Point(longitude,latitude);
+  marker[i] = new BMap.Marker(point[i]);
+  map.addOverlay(marker[i]);
+  var opts = {
+    width : 200,     // 信息窗口宽度
+    height: 100,     // 信息窗口高度
+    title : markerArr[i].title, // 信息窗口标题
+  }
+  info[i] = new BMap.InfoWindow(markerArr[i].names,opts);
+}
+
+marker[0].addEventListener("click", function(){map.openInfoWindow(info[0],point[0])})
+marker[1].addEventListener("click", function(){map.openInfoWindow(info[1],point[1])})
+marker[2].addEventListener("click", function(){map.openInfoWindow(info[2],point[2])})
+marker[3].addEventListener("click", function(){map.openInfoWindow(info[3],point[3])})
+marker[4].addEventListener("click", function(){map.openInfoWindow(info[4],point[4])})
+marker[5].addEventListener("click", function(){map.openInfoWindow(info[5],point[5])})
+marker[6].addEventListener("click", function(){map.openInfoWindow(info[6],point[6])})
+marker[7].addEventListener("click", function(){map.openInfoWindow(info[7],point[7])})
+marker[8].addEventListener("click", function(){map.openInfoWindow(info[8],point[8])})
+marker[9].addEventListener("click", function(){map.openInfoWindow(info[9],point[9])})
+marker[10].addEventListener("click", function(){map.openInfoWindow(info[10],point[10])})
+marker[11].addEventListener("click", function(){map.openInfoWindow(info[11],point[11])})
+marker[12].addEventListener("click", function(){map.openInfoWindow(info[12],point[12])})
+marker[13].addEventListener("click", function(){map.openInfoWindow(info[13],point[13])})
+marker[14].addEventListener("click", function(){map.openInfoWindow(info[14],point[14])})
+marker[15].addEventListener("click", function(){map.openInfoWindow(info[15],point[15])})
+marker[16].addEventListener("click", function(){map.openInfoWindow(info[16],point[16])})
+marker[17].addEventListener("click", function(){map.openInfoWindow(info[17],point[17])})
+marker[18].addEventListener("click", function(){map.openInfoWindow(info[18],point[18])})
+marker[19].addEventListener("click", function(){map.openInfoWindow(info[19],point[19])})
+marker[20].addEventListener("click", function(){map.openInfoWindow(info[20],point[20])})
+marker[21].addEventListener("click", function(){map.openInfoWindow(info[21],point[21])})
+marker[22].addEventListener("click", function(){map.openInfoWindow(info[22],point[22])})
+marker[23].addEventListener("click", function(){map.openInfoWindow(info[23],point[23])})
+marker[24].addEventListener("click", function(){map.openInfoWindow(info[24],point[24])})
+marker[25].addEventListener("click", function(){map.openInfoWindow(info[25],point[25])})
+marker[26].addEventListener("click", function(){map.openInfoWindow(info[26],point[26])})
+marker[27].addEventListener("click", function(){map.openInfoWindow(info[27],point[27])})
+marker[28].addEventListener("click", function(){map.openInfoWindow(info[28],point[28])})
+marker[29].addEventListener("click", function(){map.openInfoWindow(info[29],point[29])})
+
+
+</script>
+
+
+  
