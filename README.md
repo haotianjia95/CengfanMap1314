@@ -7,6 +7,6 @@
 
 <a href="https://haotianjia95.github.io/CengfanMap1314/CengfanMap_v2.html">第二个版本</a>使用了Google Map 内置的My Map功能
 
-<a href="https://haotianjia95.github.io/CengfanMap1314/CengfanMap_v2.html">第三个版本</a>使用了百度地图api，黑暗主题
+<a href="https://haotianjia95.github.io/CengfanMap1314/CengfanMap_v3.html">第三个版本</a>使用了百度地图api，黑暗主题
 
-<a href="https://haotianjia95.github.io/CengfanMap1314/CengfanMap_v2.html">第三个版本</a>使用了百度地图api，灰色主题
+<a href="https://haotianjia95.github.io/CengfanMap1314/CengfanMap_v4.html">第三个版本</a>使用了百度地图api，灰色主题
