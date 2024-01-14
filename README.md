@@ -9,11 +9,11 @@
 
 第三版使用了百度地图api
 
--黑暗主题预览：<https://haotianjia95.github.io/CengfanMap1314/CengfanMap_v3_darkmode.html> 
--灰色主题预览：<https://haotianjia95.github.io/CengfanMap1314/CengfanMap_v3_grayscale.html> 
+- 黑暗主题预览：<https://haotianjia95.github.io/CengfanMap1314/CengfanMap_v3_darkmode.html> 
+- 灰色主题预览：<https://haotianjia95.github.io/CengfanMap1314/CengfanMap_v3_grayscale.html> 
 
-第四版使用了开源交互式地图 JavaScript 库[Leaflet api](https://leafletjs.com)
-<a href="https://haotianjia95.github.io/CengfanMap1314/CengfanMap_v4_openstreetmap.html">link</a> 
+第四版使用了开源交互式地图 JavaScript 库[Leaflet api](https://leafletjs.com)，且使用了两个不同的瓦片图层地图源
 
-<a href="https://haotianjia95.github.io/CengfanMap1314/CengfanMap_v4_amap.html">link</a> 
+- openstreetmap：<https://haotianjia95.github.io/CengfanMap1314/CengfanMap_v4_openstreetmap.html> 
+- 高德（amap）：<<a href="https://haotianjia95.github.io/CengfanMap1314/CengfanMap_v4_amap.html">link</a> 
 
