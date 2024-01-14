@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta 
+    charset="utf-8"
+    />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <title>CengfanMap_v6</title>
     <style type="text/css">
@@ -11,13 +13,12 @@
       .leaflet-control-zoom-in,
       .leaflet-control-zoom-out,
       .leaflet-control-attribution{filter:
-        invert(100%) 
+/*        invert(100%) */
         grayscale(75%) 
-        hue-rotate(180deg) 
-        brightness(90%)
-        contrast(90%)
+        hue-rotate(270deg) 
+/*        brightness(90%)*/
+/*        contrast(90%)*/
       }
-
     </style>
   </head>
  
@@ -25,7 +26,8 @@
  <!-- Make sure you put this AFTER Leaflet's CSS -->
  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
- <div id="map"></div>
+  <h1 style="text-align:center">蹭饭地图</h1>
+ <div style="width:100vw; height: 90vh;margin:0 auto;" id="map"></div>
 
 
 <script>
@@ -40,7 +42,7 @@
     iconSize:     [20, 20], // size of the icon
     shadowSize:   [0, 0], // size of the shadow
     iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, -15] // point from which the popup should open relative to the iconAnchor
+    popupAnchor:  [0, -5] // point from which the popup should open relative to the iconAnchor
   });
 
   var markerArr = [ 
@@ -73,6 +75,8 @@
     var marker = L.marker([markerArr[i].lat,  markerArr[i].lng],{icon: Icon}).addTo(map);
     marker.bindPopup("<h3>" + markerArr[i].title + "</h3>" + markerArr[i].names)
     }
+
+info.addTo(map);
 
 </script>
 </body>
