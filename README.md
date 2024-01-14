@@ -1,10 +1,8 @@
 # 蹭饭地图
---------------------------------
-蹭饭地图（CengfanMap）是一个简单的地图电话簿，制作的目的是为了加强高中同学的联系，
 
-最初版是2014年高考之后Wesly同学制作的一张带有标记的图片，预览：<https://haotianjia95.github.io/CengfanMap1314/CengfanMap_v1.jpg> 
+蹭饭地图（CengfanMap）是一个简单的地图电话簿，最初版是2014年高考之后Wesly同学制作的一张带有标记的图片，上面标注了包钢第一中学2014届13班各位同学所在的城市和大学，预览：<https://haotianjia95.github.io/CengfanMap1314/CengfanMap_v1.jpg> 
 
-第二版>使用了Google Map 内置的My Map功能，预览：<https://haotianjia95.github.io/CengfanMap1314/CengfanMap_v2.html>
+第二版使用了Google Map 内置的My Map功能，预览：<https://haotianjia95.github.io/CengfanMap1314/CengfanMap_v2.html>
 
 第三版使用了百度地图api
 
