@@ -15,5 +15,5 @@
 第四版使用了开源交互式地图 JavaScript 库[Leaflet api](https://leafletjs.com)，且使用了两个不同的瓦片图层地图源
 
 - openstreetmap：<https://haotianjia95.github.io/CengfanMap1314/CengfanMap_v4_openstreetmap.html> 
-- 高德（amap）：<<a href="https://haotianjia95.github.io/CengfanMap1314/CengfanMap_v4_amap.html">link</a> 
+- 高德（amap）：<https://haotianjia95.github.io/CengfanMap1314/CengfanMap_v4_amap.html> 
 
